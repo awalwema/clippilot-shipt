@@ -1,41 +1,45 @@
 import Link from "next/link";
-import ButtonSignin from "@/components/ButtonSignin";
+import GetClipPilot from "@/components/GetClipPilot";
+import Image from "next/image";
+import clipPilotImg from "@/public/logo1.png";
 
 export default function Page() {
   return (
     <>
-      <header className="p-4 flex justify-end max-w-7xl mx-auto">
-        <ButtonSignin text="Login" />
-      </header>
-      <main>
-        <section className="flex flex-col items-center justify-center text-center gap-12 px-8 py-24">
-          <h1 className="text-3xl font-extrabold">Ship Fast ⚡️</h1>
-
-          <p className="text-lg opacity-80">
-            The start of your new startup... What are you gonna build?
-          </p>
-
+      <header className="p-6 flex justify-between items-center max-w-7xl mx-auto bg-yellow-50">
+        <div className="flex items-center space-x-4">
+          <Image
+            src={clipPilotImg}
+            alt="ClipPilot Icon"
+            width={48}
+            height={48}
+            priority={true}
+            className="rounded-box"
+            placeholder="blur"
+          />
+          <h1 className="text-xl font-bold">ClipPilot</h1>
+        </div>
+        <div className="flex items-center space-x-4">
           <a
-            className="btn btn-primary"
-            href="https://shipfa.st/docs"
+            href="https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12"
             target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
           >
-            Documentation & tutorials{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-5 h-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
-                clipRule="evenodd"
-              />
-            </svg>
+            Get it now
           </a>
-
-          <Link href="/blog" className="link link-hover text-sm">
+          <Link
+            href="/blog"
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
+            Blog
+          </Link>
+        </div>
+      </header>
+      <main className="flex flex-col items-center justify-center text-center gap-6 px-8 py-24 bg-yellow-50">
+        <GetClipPilot />
+        <section className="flex flex-col items-center justify-center gap-4 mt-8">
+          <Link href="/blog" className="link link-hover text-sm text-green-700">
             Fancy a blog?
           </Link>
         </section>

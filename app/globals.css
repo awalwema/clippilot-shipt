@@ -5,6 +5,8 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  background-color: #fffaf0; /* Light yellow background */
+  color: #333; /* General text color */
 }
 
 /* It makes the HTML progress bar filling smooth when value change. */
@@ -18,5 +20,28 @@ progress::-webkit-progress-value {
   }
   .btn {
     @apply !capitalize;
+  }
+}
+
+/* globals.css or tailwind.config.js */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    background-color: #f1f1f1;
+    color: #0a0808;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #28a745;
   }
 }
