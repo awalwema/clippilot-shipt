@@ -5,7 +5,7 @@ import config from "@/config";
 import { getSEOTags } from "@/libs/seo";
 
 export const metadata = getSEOTags({
-  title: `${config.appName} Blog | Stripe Chargeback Protection`,
+  title: `${config.appName} Blog | previously, MacClipboard`,
   description:
     "Learn how to prevent chargebacks, how to accept payments online, and keep your Stripe account in good standing",
   canonicalUrlRelative: "/blog",
@@ -25,8 +25,9 @@ export default async function Blog() {
           The {config.appName} Blog
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          Learn how to ship your startup in days, not weeks. And get the latest
-          updates about the boilerplate
+          Explore ClipPilot's blog for the latest features, productivity tips,
+          and updates. Join our community and enhance your macOS clipboard
+          experience!
         </p>
       </section>
 

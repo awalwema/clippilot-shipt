@@ -1,6 +1,7 @@
 import Link from "next/link";
 import GetClipPilot from "@/components/GetClipPilot";
 import Image from "next/image";
+import FeaturesAccordion from "@/components/FeaturesAccordion";
 import clipPilotImg from "@/public/logo1.png";
 
 export default function Page() {
@@ -38,6 +39,7 @@ export default function Page() {
       </header>
       <main className="flex flex-col items-center justify-center text-center gap-6 px-8 py-24 bg-yellow-50">
         <GetClipPilot />
+        <FeaturesAccordion />
         <section className="flex flex-col items-center justify-center gap-4 mt-8">
           <Link href="/blog" className="link link-hover text-sm text-green-700">
             Fancy a blog?

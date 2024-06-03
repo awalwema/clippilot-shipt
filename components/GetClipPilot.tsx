@@ -7,12 +7,12 @@ export default function GetClipPilot() {
     <section className="bg-yellow-50 py-8 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
             <span className="text-green-700">Instantly</span> Access Your
             Essential Clipboard Content. Get ClipPilot Now for Only{" "}
             <span className="text-green-700">$0.99</span>
           </h2>
-          <p className="mt-3 text-sm text-gray-500">
+          <p className="mt-3 text-lg text-gray-500">
             Effortlessly keep track of every text and image you've copied. Turn
             Your macOS Clipboard into a Perfectly Organized, Intuitive
             Productivity Powerhouse.
