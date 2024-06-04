@@ -9,7 +9,6 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import { categories } from "../content";
-import ButtonSignin from "@/components/ButtonSignin";
 
 const links: {
   href: string;
@@ -20,10 +19,6 @@ const links: {
     label: "All Posts",
   },
 ];
-
-const cta: JSX.Element = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
-);
 
 const ButtonPopoverCategories = () => {
   return (
@@ -198,8 +193,8 @@ const HeaderBlog = () => {
           </button>
         </div>
 
-        {/* Your links on large screens */}
-        <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center">
+        {/* Center the links on large screens */}
+        <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center lg:flex-1">
           {links.map((link) => (
             <Link
               href={link.href}
@@ -213,9 +208,6 @@ const HeaderBlog = () => {
 
           <ButtonPopoverCategories />
         </div>
-
-        {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -282,8 +274,6 @@ const HeaderBlog = () => {
               </div>
             </div>
             <div className="divider"></div>
-            {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
           </div>
         </div>
       </div>
