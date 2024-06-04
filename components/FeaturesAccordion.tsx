@@ -22,9 +22,10 @@ interface Feature {
 const features: Feature[] = [
   {
     title: "Integrated Screenshots",
-    description: "Capture, tag, and find screenshots easily.",
+    description:
+      "Capture, tag, and find screenshots easily. No more scrolling through endless folders or trying to remember cryptic file names – just search for the relevant tag, and voila!",
     type: "video",
-    path: "/videos/integrated_screenshots.mp4", // Placeholder path
+    path: "/videos/integrated_screenshots.mp4",
     format: "video/mp4",
     Icon: CameraIcon,
   },
@@ -41,7 +42,7 @@ const features: Feature[] = [
     title: "Block Specific Apps for Privacy",
     description: "Block specific apps to ensure your privacy.",
     type: "image",
-    path: "/images/block_apps.png", // Placeholder path
+    path: "/images/block_apps.png",
     alt: "Blocking specific apps for privacy",
     Icon: ShieldCheckIcon,
   },
@@ -49,7 +50,7 @@ const features: Feature[] = [
     title: "Bookmarks Feature",
     description: "Bookmark your favorite clipboard items for easy access.",
     type: "image",
-    path: "/images/bookmarks.png", // Placeholder path
+    path: "/images/bookmarks.png",
     alt: "Bookmarks feature",
     Icon: BookmarkIcon,
   },
@@ -153,9 +154,11 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          Supercharge Your Clipboard with Powerful Features
-          <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            Enhance Productivity Effortlessly
+          Simplify Your Life with ClipPilot:
+          <br />
+          <span className="bg-neutral text-neutral-content px-2 md:px-4 mt-2 md:mt-4 leading-relaxed">
+            Discover How Its Powerful Features Streamline Your Clipboard
+            Workflow
           </span>
         </h2>
 

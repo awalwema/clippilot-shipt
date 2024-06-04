@@ -13,9 +13,10 @@ export default function GetClipPilot() {
             <span className="text-green-700">$0.99</span>
           </h2>
           <p className="mt-3 text-lg text-gray-500">
-            Effortlessly keep track of every text and image you've copied. Turn
-            Your macOS Clipboard into a Perfectly Organized, Intuitive
-            Productivity Powerhouse.
+            Have you ever copied an important piece of information, only to
+            accidentally overwrite it with a security code moments later?
+            ClipPilot ensures you never lose track of your essential copied
+            content again.
           </p>
           <div className="mt-6 flex justify-center">
             <a
