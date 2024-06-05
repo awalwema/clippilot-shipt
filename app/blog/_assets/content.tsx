@@ -22,7 +22,7 @@ export type categoryType = {
   descriptionShort?: string;
 };
 
-// These slugs are used to generate pages in the /blog/category/[categoryI].js. It's a way to group articles by category.
+// These slugs are used to generate pages in the /blog/category/[categoryI].js. It&apos;s a way to group articles by category.
 const categorySlugs: { [key: string]: string } = {
   feature: "feature",
   tutorial: "tutorial",
@@ -39,7 +39,7 @@ export const categories: categoryType[] = [
     titleShort: "Features",
     // The description of the category to display in the category page. Up to 160 characters.
     description:
-      "Here are the latest features we've added to ClipPilot. I'm constantly improving our product to help you do more",
+      "Here are the latest features we&apos;ve added to ClipPilot. I&apos;m constantly improving our product to help you do more",
     // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
     descriptionShort: "Latest features added to ClipPilot.",
   },
@@ -48,7 +48,7 @@ export const categories: categoryType[] = [
     title: "How Tos & Tutorials",
     titleShort: "Tutorials",
     description:
-      "Learn how to use ClipPilot with these step-by-step tutorials. I'll show you how to ship faster and save time.",
+      "Learn how to use ClipPilot with these step-by-step tutorials. I&apos;ll show you how to ship faster and save time.",
     descriptionShort:
       "Learn how to use ClipPilot with these step-by-step tutorials.",
   },
@@ -71,7 +71,7 @@ export type authorType = {
   }[];
 };
 
-// Social icons used in the author's bio.
+// Social icons used in the author&apos;s bio.
 const socialIcons: {
   [key: string]: {
     name: string;
@@ -127,7 +127,7 @@ const socialIcons: {
   },
 };
 
-// These slugs are used to generate pages in the /blog/author/[authorId].js. It's a way to show all articles from an author.
+// These slugs are used to generate pages in the /blog/author/[authorId].js. It&apos;s a way to show all articles from an author.
 const authorSlugs: {
   [key: string]: string;
 } = {
@@ -140,16 +140,16 @@ export const authors: authorType[] = [
   {
     // The slug to use in the URL, from the authorSlugs object above.
     slug: authorSlugs.marc,
-    // The name to display in the author's bio. Up to 60 characters.
+    // The name to display in the author&apos;s bio. Up to 60 characters.
     name: "Marc Lou",
-    // The job to display in the author's bio. Up to 60 characters.
+    // The job to display in the author&apos;s bio. Up to 60 characters.
     job: "Maker of ByeDispute",
-    // The description of the author to display in the author's bio. Up to 160 characters.
+    // The description of the author to display in the author&apos;s bio. Up to 160 characters.
     description:
-      "Marc is a developer and an entrepreneur. He's built 20 startups in the last 3 years. 6 were profitable and 3 were acquired. He's currently building ByeDispute, the #1 Stripe Chargebacks Protection tool.",
-    // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
+      "Marc is a developer and an entrepreneur. He&apos;s built 20 startups in the last 3 years. 6 were profitable and 3 were acquired. He&apos;s currently building ByeDispute, the #1 Stripe Chargebacks Protection tool.",
+    // The avatar of the author to display in the author&apos;s bio and avatar badge. It&apos;s better to use a local image, but you can also use an external image (https://...)
     avatar: marcImg,
-    // A list of social links to display in the author's bio.
+    // A list of social links to display in the author&apos;s bio.
     socials: [
       {
         name: socialIcons.twitter.name,
@@ -171,15 +171,15 @@ export const authors: authorType[] = [
   {
     // The slug to use in the URL, from the authorSlugs object above.
     slug: authorSlugs.andrew,
-    // The name to display in the author's bio. Up to 60 characters.
+    // The name to display in the author&apos;s bio. Up to 60 characters.
     name: "Andrew ",
-    // The job to display in the author's bio. Up to 60 characters.
+    // The job to display in the author&apos;s bio. Up to 60 characters.
     job: "Maker of ClipPilot",
-    // The description of the author to display in the author's bio. Up to 160 characters.
+    // The description of the author to display in the author&apos;s bio. Up to 160 characters.
     description: "Andrew likes to build, read, and follow his curiousity",
-    // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
+    // The avatar of the author to display in the author&apos;s bio and avatar badge. It&apos;s better to use a local image, but you can also use an external image (https://...)
     avatar: andrewImg,
-    // A list of social links to display in the author's bio.
+    // A list of social links to display in the author&apos;s bio.
     socials: [
       {
         name: socialIcons.twitter.name,
@@ -237,20 +237,20 @@ const styles: {
 // All the blog articles data display in the /blog/[articleId].js pages.
 export const articles: articleType[] = [
   //   {
-  //     // The unique slug to use in the URL. It's also used to generate the canonical URL.
+  //     // The unique slug to use in the URL. It&apos;s also used to generate the canonical URL.
   //     slug: "introducing-supabase",
-  //     // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
+  //     // The title to display in the article page (h1). Less than 60 characters. It&apos;s also used to generate the meta title.
   //     title: "Introducing Supabase to ShipFast",
-  //     // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
+  //     // The description of the article to display in the article page. Up to 160 characters. It&apos;s also used to generate the meta description.
   //     description:
-  //       "Supabase is an open-source Firebase alternative. It's a great tool for building a backend for your app. It's now integrated with ShipFast!",
-  //     // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
+  //       "Supabase is an open-source Firebase alternative. It&apos;s a great tool for building a backend for your app. It&apos;s now integrated with ShipFast!",
+  //     // An array of categories of the article. It&apos;s used to generate the category badges, the category filter, and more.
   //     categories: [
   //       categories.find((category) => category.slug === categorySlugs.feature),
   //     ],
-  //     // The author of the article. It's used to generate a link to the author's bio page.
+  //     // The author of the article. It&apos;s used to generate a link to the author&apos;s bio page.
   //     author: authors.find((author) => author.slug === authorSlugs.marc),
-  //     // The date of the article. It's used to generate the meta date.
+  //     // The date of the article. It&apos;s used to generate the meta date.
   //     publishedAt: "2023-11-20",
   //     image: {
   //       // The image to display in <CardArticle /> components.
@@ -297,7 +297,7 @@ export const articles: articleType[] = [
   //           <pre className={styles.code}>
   //             <code>
   //               {`CREATE TABLE public.users (
-  //   id bigint NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+  //   id bigint NOT NULL DEFAULT nextval(&apos;users_id_seq&apos;::regclass),
   //   email text NOT NULL,
   //   password text NOT NULL,
   //   created_at timestamp with time zone NOT NULL DEFAULT now(),
@@ -326,21 +326,21 @@ export const articles: articleType[] = [
   //     ),
   //   },
   {
-    // The unique slug to use in the URL. It's also used to generate the canonical URL.
+    // The unique slug to use in the URL. It&apos;s also used to generate the canonical URL.
     slug: "introducing-clippilot",
-    // The title to display in the article page (h1). Less than 60 characters. It's also used to generate the meta title.
-    title: "Getting Started with ClipPilot: A Beginner's Guide",
-    // The description of the article to display in the article page. Up to 160 characters. It's also used to generate the meta description.
+    // The title to display in the article page (h1). Less than 60 characters. It&apos;s also used to generate the meta title.
+    title: "Getting Started with ClipPilot: A Beginner&apos;s Guide",
+    // The description of the article to display in the article page. Up to 160 characters. It&apos;s also used to generate the meta description.
     description:
-      "Revolutionize your clipboard experience on macOS with ClipPilot, the ultimate tool for managing text, images, and media. This beginner's guide will walk you through the fundamentals of ClipPilot and show you how to elevate your productivity and data management.",
-    // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
+      "Revolutionize your clipboard experience on macOS with ClipPilot, the ultimate tool for managing text, images, and media. This beginner&apos;s guide will walk you through the fundamentals of ClipPilot and show you how to elevate your productivity and data management.",
+    // An array of categories of the article. It&apos;s used to generate the category badges, the category filter, and more.
     categories: [
       categories.find((category) => category.slug === categorySlugs.feature),
       categories.find((category) => category.slug === categorySlugs.tutorial),
     ],
-    // The author of the article. It's used to generate a link to the author's bio page.
+    // The author of the article. It&apos;s used to generate a link to the author&apos;s bio page.
     author: authors.find((author) => author.slug === authorSlugs.andrew),
-    // The date of the article. It's used to generate the meta date.
+    // The date of the article. It&apos;s used to generate the meta date.
     publishedAt: "2024-06-04",
     image: {
       // The image to display in <CardArticle /> components.
@@ -382,7 +382,7 @@ export const articles: articleType[] = [
           </p>
           <br></br>
           <p className={styles.p}>
-            But ClipPilot isn't just about managing text – it's also a
+            But ClipPilot isn&apos;t just about managing text – it&apos;s also a
             game-changer for screenshot management. ClipPilot allows you to
             create, tag, and search for screenshots effortlessly. Making it the
             perfect tool for designers, developers, and anyone who frequently
@@ -405,9 +405,9 @@ export const articles: articleType[] = [
           <br></br>
           <p className={styles.p}>
             ClipPilot is designed to be intuitive and user-friendly, making it
-            easy for you to get started with the app. In this section, we'll
-            cover the basics of accessing and navigating ClipPilot, so you can
-            begin optimizing your clipboard management experience.
+            easy for you to get started with the app. In this section,
+            we&apos;ll cover the basics of accessing and navigating ClipPilot,
+            so you can begin optimizing your clipboard management experience.
           </p>
           <br></br>
           <ul className={styles.ul}>
@@ -437,17 +437,17 @@ export const articles: articleType[] = [
             </li>
             <li className={styles.li}>
               <strong>Navigating the Interface:</strong> At the top of the
-              ClipPilot window, you'll find a search bar. This feature allows
-              you to quickly locate specific text items or hyperlinks within
-              your clipboard history. Simply type in your search query, and
-              ClipPilot will instantly display relevant results.
+              ClipPilot window, you&apos;ll find a search bar. This feature
+              allows you to quickly locate specific text items or hyperlinks
+              within your clipboard history. Simply type in your search query,
+              and ClipPilot will instantly display relevant results.
             </li>
             <li className={styles.li}>
               <strong>Effortless Bookmarking:</strong> To the right of the
-              search bar, you'll notice three icons: a bookmark (star), settings
-              (gear), and screenshot (camera). Clicking the bookmark icon will
-              display all your favorited clipboard items, making it easy to
-              access your most frequently used content.
+              search bar, you&apos;ll notice three icons: a bookmark (star),
+              settings (gear), and screenshot (camera). Clicking the bookmark
+              icon will display all your favorited clipboard items, making it
+              easy to access your most frequently used content.
             </li>
             <br></br>
             <Image
@@ -479,24 +479,25 @@ export const articles: articleType[] = [
             Have you ever copied an important piece of information, only to
             accidentally overwrite it moments later when copying something else
             like a security code? Or worse, have you ever lost track of that
-            important information altogether? With ClipPilot's integrated
+            important information altogether? With ClipPilot&apos;s integrated
             clipboard management, these struggles are a thing of the past.
           </p>
           <br></br>
           <p className={styles.p}>
-            ClipPilot's screenshot management is a game-changer for anyone who
-            frequently works with visual content. Whether you're a designer,
-            developer, or just someone who takes a lot of screenshots, this
-            feature will revolutionize the way you organize and retrieve your
-            images.
+            ClipPilot&apos;s screenshot management is a game-changer for anyone
+            who frequently works with visual content. Whether you&apos;re a
+            designer, developer, or just someone who takes a lot of screenshots,
+            this feature will revolutionize the way you organize and retrieve
+            your images.
           </p>
           <br></br>
           <p className={styles.p}>
-            The key to ClipPilot's screenshot management is its tagging system.
-            By allowing you to add custom tags to your screenshots, ClipPilot
-            makes it incredibly easy to find the right image when you need it.
-            No more scrolling through endless folders or trying to remember
-            cryptic file names – just search for the relevant tag, and voila!
+            The key to ClipPilot&apos;s screenshot management is its tagging
+            system. By allowing you to add custom tags to your screenshots,
+            ClipPilot makes it incredibly easy to find the right image when you
+            need it. No more scrolling through endless folders or trying to
+            remember cryptic file names – just search for the relevant tag, and
+            voila!
           </p>
           <br></br>
           <video
@@ -513,7 +514,7 @@ export const articles: articleType[] = [
           </video>
           <br></br>
           <p className={styles.p}>
-            <strong>Here's how it works</strong>:
+            <strong>Here&apos;s how it works</strong>:
           </p>
           <ul className={styles.ul}>
             <li className={styles.li}>
@@ -523,26 +524,27 @@ export const articles: articleType[] = [
               portion, or cancel.
             </li>
             <li className={styles.li}>
-              Once you've taken your screenshot, another popup window will
+              Once you&apos;ve taken your screenshot, another popup window will
               appear, prompting you to add tags. Simply type in your desired
               tags, separating each one with a comma. You can add as many tags
               as you like, so feel free to be descriptive!
             </li>
             <li className={styles.li}>
-              After adding your tags, click "Save," and your screenshot will be
-              stored in ClipPilot with its associated tags. Now, whenever you
-              need to find that screenshot, simply search for any of the tags
-              you assigned to it. ClipPilot will instantly retrieve the image,
-              ready for you to copy and paste wherever you need it.
+              After adding your tags, click `&ldquo;`Save,`&rdquo;` and your
+              screenshot will be stored in ClipPilot with its associated tags.
+              Now, whenever you need to find that screenshot, simply search for
+              any of the tags you assigned to it. ClipPilot will instantly
+              retrieve the image, ready for you to copy and paste wherever you
+              need it.
             </li>
           </ul>
           <br></br>
           <p className={styles.p}>
-            By leveraging ClipPilot's screenshot management, you'll save time,
-            reduce frustration, and never lose another important screenshot
-            again. It's a true game-changer for anyone looking to streamline
-            their visual content workflow. Give it a try and experience the
-            difference for yourself!
+            By leveraging ClipPilot&apos;s screenshot management, you&apos;ll
+            save time, reduce frustration, and never lose another important
+            screenshot again. It&apos;s a true game-changer for anyone looking
+            to streamline their visual content workflow. Give it a try and
+            experience the difference for yourself!
           </p>
         </section>
 
@@ -563,10 +565,10 @@ export const articles: articleType[] = [
             <li className={styles.li}>
               <strong>Bookmark Your Favorites:</strong> Keep your essential
               clipboard items within easy reach. To favorite an item, simply
-              click the star icon on the item's thumbnail. A filled yellow star
-              indicates that the item is now in your favorites. To access all
-              your favored items, click on the large star icon located beside
-              the search bar.
+              click the star icon on the item&apos;s thumbnail. A filled yellow
+              star indicates that the item is now in your favorites. To access
+              all your favored items, click on the large star icon located
+              beside the search bar.
             </li>
             <li className={styles.li}>
               <strong>Streamline Copy and Paste:</strong> ClipPilot captures
@@ -577,8 +579,8 @@ export const articles: articleType[] = [
             <li className={styles.li}>
               <strong>Organize with Ease:</strong> To remove items from your
               ClipPilot history, click the trash icon in the top right corner of
-              the item's thumbnail. This helps you maintain an organized and
-              clutter-free clipboard.
+              the item&apos;s thumbnail. This helps you maintain an organized
+              and clutter-free clipboard.
             </li>
             <br></br>
             <Image
@@ -592,16 +594,17 @@ export const articles: articleType[] = [
             />
             <br></br>
             <li className={styles.li}>
-              <strong>Quick Search in Clipboard:</strong> Use ClipPilot's search
-              bar to swiftly find any text-based item you've copied. This
-              feature is particularly useful for retrieving specific hyperlinks
-              or text snippets from your clipboard history.
+              <strong>Quick Search in Clipboard:</strong> Use ClipPilot&apos;s
+              search bar to swiftly find any text-based item you&apos;ve copied.
+              This feature is particularly useful for retrieving specific
+              hyperlinks or text snippets from your clipboard history.
             </li>
             <li className={styles.li}>
-              <strong>Direct Hyperlink Access:</strong> ClipPilot's 'Open Link'
-              button allows you to launch hyperlinks directly in your default
-              browser. This seamless integration provides immediate access to
-              the web without the need to manually copy and paste URLs.
+              <strong>Direct Hyperlink Access:</strong> ClipPilot&apos;s
+              &apos;Open Link&apos; button allows you to launch hyperlinks
+              directly in your default browser. This seamless integration
+              provides immediate access to the web without the need to manually
+              copy and paste URLs.
             </li>
             <li className={styles.li}>
               <strong>Enhanced Privacy Control:</strong> ClipPilot offers
@@ -611,10 +614,10 @@ export const articles: articleType[] = [
               certificates, remain private. <br></br> You can also exclude other
               privacy-sensitive applications, like third-party password
               managers, from being monitored. To do this, navigate to the
-              settings menu, select 'Add Application to Ignore,' and choose the
-              apps you wish to keep private. Removing apps from the ignore list
-              is just as straightforward – simply click the red minus button
-              next to the app's name.
+              settings menu, select &apos;Add Application to Ignore,&apos; and
+              choose the apps you wish to keep private. Removing apps from the
+              ignore list is just as straightforward – simply click the red
+              minus button next to the app&apos;s name.
             </li>
           </ul>
         </section>
@@ -622,9 +625,9 @@ export const articles: articleType[] = [
         <section>
           <h2 className={styles.h2}>Connect for Support and Suggestions</h2>
           <p className={styles.p}>
-            We're Here to Help and Improve: Your experience with ClipPilot is
-            our top priority. If you need assistance or have innovative ideas
-            for new features, please don't hesitate to reach out. You can
+            We&apos;re Here to Help and Improve: Your experience with ClipPilot
+            is our top priority. If you need assistance or have innovative ideas
+            for new features, please don&apos;t hesitate to reach out. You can
             connect with me via email at{" "}
             <a
               href="mailto:gratatouille23@gmail.com"
@@ -642,7 +645,7 @@ export const articles: articleType[] = [
               twitter.com/gratatouille23
             </a>
             . <br></br>
-            <br></br>Your feedback is invaluable, and I'm committed to
+            <br></br>Your feedback is invaluable, and I&apos;m committed to
             continually enhancing ClipPilot based on your suggestions.
           </p>
         </section>
@@ -650,7 +653,7 @@ export const articles: articleType[] = [
         <section>
           <h2 className={styles.h2}>Wrapping Up and Looking Forward</h2>
           <p className={styles.p}>
-            Throughout this guide, we've walked you through the essential
+            Throughout this guide, we&apos;ve walked you through the essential
             functionalities of ClipPilot, empowering you to:
           </p>
           <ul className={styles.ul}>
@@ -669,9 +672,9 @@ export const articles: articleType[] = [
           </ul>
           <br></br>
           <p className={styles.p}>
-            ClipPilot's screenshot management is a game-changer for anyone who
-            frequently works with visual content. By allowing you to capture,
-            tag, and search for screenshots effortlessly, ClipPilot
+            ClipPilot&apos;s screenshot management is a game-changer for anyone
+            who frequently works with visual content. By allowing you to
+            capture, tag, and search for screenshots effortlessly, ClipPilot
             revolutionizes the way you organize and retrieve your images.
           </p>
           <br></br>
@@ -688,7 +691,7 @@ export const articles: articleType[] = [
             Ready to Elevate Your Clipboard Experience?
           </h2>
           <p className={styles.p}>
-            Don't miss out on the opportunity to supercharge your clipboard
+            Don&apos;t miss out on the opportunity to supercharge your clipboard
             management and skyrocket your productivity.{" "}
             <a
               href="https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12"

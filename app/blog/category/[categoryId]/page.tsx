@@ -20,6 +20,12 @@ export async function generateMetadata({
   });
 }
 
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    categoryId: category.slug,
+  }));
+}
+
 export default async function Category({
   params,
 }: {

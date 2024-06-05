@@ -36,6 +36,12 @@ export async function generateMetadata({
   });
 }
 
+export async function generateStaticParams() {
+  return articles.map((article) => ({
+    articleId: article.slug,
+  }));
+}
+
 export default async function Article({
   params,
 }: {

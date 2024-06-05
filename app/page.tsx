@@ -31,7 +31,7 @@ export default function Page() {
           </a>
           <Link
             href="/blog"
-            className="text-sm text-gray-500 hover:text-gray-700"
+            className="text-sm text-gray-500 hover:text-primary hover:underline"
           >
             ClipPilot Blog
           </Link>
@@ -40,11 +40,6 @@ export default function Page() {
       <main className="flex flex-col items-center justify-center text-center gap-6 px-8 py-24 bg-yellow-50">
         <GetClipPilot />
         <FeaturesAccordion />
-        {/* <section className="flex flex-col items-center justify-center gap-4 mt-8">
-          <Link href="/blog" className="link link-hover text-sm text-green-700">
-            Fancy a blog?
-          </Link>
-        </section> */}
       </main>
     </>
   );

@@ -18,6 +18,12 @@ export async function generateMetadata({
   });
 }
 
+export async function generateStaticParams() {
+  return authors.map((author) => ({
+    authorId: author.slug,
+  }));
+}
+
 export default async function Author({
   params,
 }: {

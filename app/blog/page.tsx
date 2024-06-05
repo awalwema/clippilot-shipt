@@ -25,8 +25,8 @@ export default async function Blog() {
           The {config.appName} Blog
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          Explore ClipPilot's blog for the latest features, productivity tips,
-          and updates. Join our community and enhance your macOS clipboard
+          Explore ClipPilot&apos;s blog for the latest features, productivity
+          tips, and updates. Join our community and enhance your macOS clipboard
           experience!
         </p>
       </section>
