@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   basePath: "/clippilot-shipt",
+  assetPrefix: "/clippilot-shipt/",
   output: "export",
   images: {
     unoptimized: true,
     domains: [
-      // NextJS <Image> component needs to whitelist domains for src={}
       "lh3.googleusercontent.com",
       "pbs.twimg.com",
       "images.unsplash.com",

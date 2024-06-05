@@ -2,7 +2,6 @@ import type { JSX } from "react";
 import Image, { StaticImageData } from "next/image";
 import marcImg from "@/app/blog/_assets/images/authors/marc.png";
 import andrewImg from "@/app/blog/_assets/images/authors/andrew.jpg";
-import introducingSupabaseImg from "@/public/blog/introducing-supabase/header.png";
 import introducingClipPilotImg from "@/public/blog/introducing-clippilot/header.png";
 import clipPilotUiImg from "@/public/blog/introducing-clippilot/getting-started.webp";
 import clipPilotWelcomeImg from "@/public/blog/introducing-clippilot/clippilot-welcomepage.png";
@@ -329,7 +328,7 @@ export const articles: articleType[] = [
     // The unique slug to use in the URL. It&apos;s also used to generate the canonical URL.
     slug: "introducing-clippilot",
     // The title to display in the article page (h1). Less than 60 characters. It&apos;s also used to generate the meta title.
-    title: "Getting Started with ClipPilot: A Beginner&apos;s Guide",
+    title: "Getting Started with ClipPilot: A Beginner's Guide",
     // The description of the article to display in the article page. Up to 160 characters. It&apos;s also used to generate the meta description.
     description:
       "Revolutionize your clipboard experience on macOS with ClipPilot, the ultimate tool for managing text, images, and media. This beginner&apos;s guide will walk you through the fundamentals of ClipPilot and show you how to elevate your productivity and data management.",
@@ -501,7 +500,7 @@ export const articles: articleType[] = [
           </p>
           <br></br>
           <video
-            src="/blog/introducing-clippilot/screenshot-blog.mp4"
+            src="/clippilot-shipt/blog/introducing-clippilot/screenshot-blog.mp4"
             autoPlay
             muted
             loop
