@@ -9,9 +9,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      window.gtag("config", process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
-        page_path: url,
-      });
+      if (typeof window.gtag !== "undefined") {
+        window.gtag(
+          "config",
+          process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string,
+          {
+            page_path: url,
+          }
+        );
+      }
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
