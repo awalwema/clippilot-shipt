@@ -500,7 +500,7 @@ export const articles: articleType[] = [
           </p>
           <br></br>
           <video
-            src="/clippilot-shipt/blog/introducing-clippilot/screenshot-blog.mp4"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/blog/introducing-clippilot/screenshot-blog.mp4`}
             autoPlay
             muted
             loop

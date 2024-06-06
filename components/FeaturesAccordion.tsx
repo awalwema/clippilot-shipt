@@ -39,7 +39,7 @@ const features: Feature[] = [
     description:
       "Capture, tag, and find screenshots easily. No more scrolling through endless folders or trying to remember cryptic file names – just search for the relevant tag, and voila!",
     type: "video",
-    path: "/clippilot-shipt/videos/integrated_screenshots.mp4",
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/videos/integrated_screenshots.mp4`,
     format: "video/mp4",
     Icon: CameraIcon,
   },
@@ -48,7 +48,7 @@ const features: Feature[] = [
     description:
       "Use the search function to find and insert text like email templates.",
     type: "video",
-    path: "/clippilot-shipt/videos/find_and_insert_text.mp4", // Placeholder path
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/videos/find_and_insert_text.mp4`, // Placeholder path
     format: "video/mp4",
     Icon: MagnifyingGlassIcon,
   },
@@ -56,7 +56,7 @@ const features: Feature[] = [
     title: "Block Specific Apps for Privacy",
     description: "Block specific apps to ensure your privacy.",
     type: "image",
-    path: "/clippilot-shipt/images/block_apps.png",
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/block_apps.png`,
     alt: "Blocking specific apps for privacy",
     Icon: ShieldCheckIcon,
   },
@@ -64,7 +64,7 @@ const features: Feature[] = [
     title: "Bookmarks Feature",
     description: "Bookmark your favorite clipboard items for easy access.",
     type: "image",
-    path: "/clippilot-shipt/images/bookmarks.png",
+    path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/bookmarks.png`,
     alt: "Bookmarks feature",
     Icon: BookmarkIcon,
   },

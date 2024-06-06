@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/clippilot-shipt",
-  assetPrefix: "/clippilot-shipt/",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH.replace(/\/+$/, ""),
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH.replace(/\/+$/, ""),
   output: "export",
   images: {
     unoptimized: true,
