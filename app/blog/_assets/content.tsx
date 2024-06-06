@@ -529,12 +529,11 @@ export const articles: articleType[] = [
               as you like, so feel free to be descriptive!
             </li>
             <li className={styles.li}>
-              After adding your tags, click `&ldquo;`Save,`&rdquo;` and your
-              screenshot will be stored in ClipPilot with its associated tags.
-              Now, whenever you need to find that screenshot, simply search for
-              any of the tags you assigned to it. ClipPilot will instantly
-              retrieve the image, ready for you to copy and paste wherever you
-              need it.
+              After adding your tags, click &apos;Save&apos; and your screenshot
+              will be stored in ClipPilot with its associated tags. Now,
+              whenever you need to find that screenshot, simply search for any
+              of the tags you assigned to it. ClipPilot will instantly retrieve
+              the image, ready for you to copy and paste wherever you need it.
             </li>
           </ul>
           <br></br>
