@@ -331,7 +331,7 @@ export const articles: articleType[] = [
     title: "Getting Started with ClipPilot: A Beginner's Guide",
     // The description of the article to display in the article page. Up to 160 characters. It&apos;s also used to generate the meta description.
     description:
-      "Revolutionize your clipboard experience on macOS with ClipPilot, the ultimate tool for managing text, images, and media. This beginner&apos;s guide will walk you through the fundamentals of ClipPilot and show you how to elevate your productivity and data management.",
+      "Revolutionize your clipboard experience on macOS with ClipPilot, the ultimate tool for managing text, images, and media. This beginner's guide will walk you through the fundamentals of ClipPilot and show you how to elevate your productivity and data management.",
     // An array of categories of the article. It&apos;s used to generate the category badges, the category filter, and more.
     categories: [
       categories.find((category) => category.slug === categorySlugs.feature),
