@@ -8,7 +8,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
+    console.log(
+      "Google Analytics ID:",
+      process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
+    );
+
     const handleRouteChange = (url: string) => {
+      console.log("Page view:", url);
       if (typeof window.gtag !== "undefined") {
         window.gtag(
           "config",
