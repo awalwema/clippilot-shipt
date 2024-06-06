@@ -67,7 +67,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Generate Sitemap and Move Files 📜
-        run: npm run postbuild && mv ./public/sitemap.xml ./out/sitemap.xml && mv ./public/robots.txt ./out/robots.txt
+        run: npm run postbuild && mv ./public/sitemap.xml ./out/sitemap.xml && mv ./public/sitemap-0.xml ./out/sitemap-0.xml && mv ./public/robots.txt ./out/robots.txt
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
