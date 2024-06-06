@@ -23,11 +23,6 @@ progress::-webkit-progress-value {
   }
 }
 
-/* globals.css or tailwind.config.js */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer components {
   .btn {
     @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
