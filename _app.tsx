@@ -8,14 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(
-      "Google Analytics ID:",
-      process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
-    );
-
     const handleRouteChange = (url: string) => {
-      console.log("Page view:", url);
+      console.log(`Loading: ${url}`);
       if (typeof window.gtag !== "undefined") {
+        console.log("gtag exists, sending pageview");
         window.gtag(
           "config",
           process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string,
@@ -23,6 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             page_path: url,
           }
         );
+      } else {
+        console.log("gtag is undefined");
       }
     };
 
@@ -32,11 +30,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
+  useEffect(() => {
+    console.log("Initializing Google Analytics");
+  }, []);
+
   return (
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         strategy="afterInteractive"
+        onLoad={() => {
+          console.log("Google Analytics script loaded");
+        }}
       />
       <Script
         id="google-analytics"
@@ -51,6 +56,9 @@ function MyApp({ Component, pageProps }: AppProps) {
               page_path: window.location.pathname,
             });
           `,
+        }}
+        onLoad={() => {
+          console.log("Google Analytics inline script executed");
         }}
       />
       <Component {...pageProps} />
