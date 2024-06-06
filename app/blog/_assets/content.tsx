@@ -38,7 +38,7 @@ export const categories: categoryType[] = [
     titleShort: "Features",
     // The description of the category to display in the category page. Up to 160 characters.
     description:
-      "Here are the latest features we&apos;ve added to ClipPilot. I&apos;m constantly improving our product to help you do more",
+      "Here are the latest features we've added to ClipPilot. I'm constantly improving our product to help you do more",
     // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
     descriptionShort: "Latest features added to ClipPilot.",
   },
