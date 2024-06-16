@@ -723,7 +723,7 @@ export const articles: articleType[] = [
       categories.find((category) => category.slug === categorySlugs.tutorial),
     ],
     author: authors.find((author) => author.slug === authorSlugs.andrew),
-    publishedAt: "2024-06-05",
+    publishedAt: "2024-06-16",
     image: {
       src: selectTextImg,
       urlRelative: "/images/select-text.png",
