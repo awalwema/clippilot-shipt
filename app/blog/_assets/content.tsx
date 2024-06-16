@@ -8,6 +8,11 @@ import clipPilotWelcomeImg from "@/public/blog/introducing-clippilot/clippilot-w
 import clipPilotSettingsImg from "@/public/blog/introducing-clippilot/clippilot-settings.png";
 import bookmarkFeatureImg from "@/public/blog/introducing-clippilot/bookmark-feature.png";
 import quickSearchFeatureImg from "@/public/blog/introducing-clippilot/quick-search-feature.png";
+import selectTextImg from "@/public/blog/how-to-copy-paste/select-text.png";
+import copyTextImg from "@/public/blog/how-to-copy-paste/copy-text.png";
+import pasteTextImg from "@/public/blog/how-to-copy-paste/paste-text.png";
+import copyImageImg from "@/public/blog/how-to-copy-paste/copy-image.png";
+import clipPilotImg from "@/public/ui-image.png";
 
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️
@@ -704,6 +709,185 @@ export const articles: articleType[] = [
             <br></br>
             Take control of your clipboard today and unlock a new level of
             efficiency on your MacBook.
+          </p>
+        </section>
+      </>
+    ),
+  },
+  {
+    slug: "how-to-copy-paste-on-your-mac",
+    title: "How to Copy and Paste Text and Images on Your Mac",
+    description:
+      "Stepping into the world of Mac for the first time can feel daunting, especially when it comes to essential tasks like copying and pasting. This guide is crafted with you in mind, to make these steps feel like second nature.",
+    categories: [
+      categories.find((category) => category.slug === categorySlugs.tutorial),
+    ],
+    author: authors.find((author) => author.slug === authorSlugs.andrew),
+    publishedAt: "2024-06-05",
+    image: {
+      src: selectTextImg,
+      urlRelative: "/images/select-text.png",
+      alt: "Select Text",
+    },
+    content: (
+      <>
+        <Image
+          src={selectTextImg}
+          alt="Select Text"
+          width={700}
+          height={500}
+          priority={true}
+          className="rounded-box"
+          placeholder="blur"
+        />
+        <section>
+          <h2 className={styles.h2}>
+            Your Step-by-Step Guide to Copying and Pasting Text
+          </h2>
+          <p className={styles.p}>
+            Are you new to the world of Mac and feeling overwhelmed by essential
+            tasks like copying and pasting? Don&apos;t worry; you&apos;re not
+            alone. Many first-time Mac users find themselves in the same
+            situation. In this beginner-friendly, step-by-step guide, we&apos;ll
+            walk you through the process of copying and pasting on a Mac, making
+            it feel like second nature in no time.
+          </p>
+          <br></br>
+
+          <h3 className={styles.h3}>Step 1: Selecting Your Text</h3>
+          <p className={styles.p}>
+            First, highlight the text you wish to copy. This can be done by
+            clicking and dragging your cursor across the desired text.
+            Alternatively, use the keyboard shortcut by holding Shift + Arrow
+            Keys to select text efficiently.
+          </p>
+          <br></br>
+          <p className={styles.p}>
+            <strong>Quick Tip:</strong> For cutting text, press Command + X
+            instead of C, removing it from its original location as you copy.
+          </p>
+          <br></br>
+
+          <Image
+            src={copyTextImg}
+            alt="Copy Text"
+            width={700}
+            height={500}
+            priority={true}
+            className="rounded-box"
+            placeholder="blur"
+          />
+          <br></br>
+          <br></br>
+          <h3 className={styles.h3}>Step 2: Initiate the Copy</h3>
+          <p className={styles.p}>
+            With your text selected, press Command + C or right-click and choose
+            &apos;&apos;Copy&apos;&apos; from the context menu. This copies the
+            text to your clipboard, ready to be pasted elsewhere.
+          </p>
+          <br></br>
+
+          <Image
+            src={pasteTextImg}
+            alt="Paste Text"
+            width={700}
+            height={500}
+            priority={true}
+            className="rounded-box"
+            placeholder="blur"
+          />
+          <br></br>
+          <br></br>
+          <h3 className={styles.h3}>Step 3: Paste Your Text</h3>
+          <p className={styles.p}>
+            Navigate to where you&apos;d like to paste the copied text, ensuring
+            the field is editable. Press Command + V to paste. For styling
+            consistency with the destination text, use Option + Shift + Command
+            + V.
+          </p>
+        </section>
+
+        <section>
+          <h2 className={styles.h2}>Copying and Pasting Images</h2>
+          <Image
+            src={copyImageImg}
+            alt="Copy Image"
+            width={700}
+            height={500}
+            priority={true}
+            className="rounded-box"
+            placeholder="blur"
+          />
+          <br></br>
+          <p className={styles.p}>
+            Just like with text, copying and pasting images on a Mac is
+            straightforward. Right-click on the desired image and select
+            &apos;&apos;Copy Image.&apos;&apos; Then, navigate to where you want
+            to paste it, ensuring the destination supports images, and press
+            Command + V or choose &apos;&apos;Paste&apos;&apos; from the
+            right-click menu.
+          </p>
+        </section>
+
+        <section>
+          <h2 className={styles.h2}>Copy and Pasting Made Easy on Your Mac</h2>
+          <Image
+            src={clipPilotImg}
+            alt="ClipPilot"
+            width={700}
+            height={500}
+            priority={true}
+            className="rounded-box"
+            placeholder="blur"
+          />
+          <p className={styles.p}>
+            Copying and pasting on a Mac is something you&apos;ll do a lot.
+            It&apos;s super simple. But, ever found yourself copying something,
+            then something else, and needing the first thing again? It&apos;s a
+            hassle, right?
+          </p>
+          <br></br>
+          <p className={styles.p}>
+            That&apos;s exactly why we made ClipPilot. It&apos;s like a magic
+            box where everything you copy gets saved. You can go back and grab
+            anything you&apos;ve copied before, anytime. No more losing
+            important stuff just because you copied something else.
+          </p>
+          <br></br>
+          <p className={styles.p}>
+            With ClipPilot, you can keep everything organized in one spot.
+            It&apos;s super easy to find and reuse whatever you copied, without
+            the headache of digging around for it.
+          </p>
+        </section>
+
+        <section>
+          <h2 className={styles.h2}>Why Not Give ClipPilot a Try?</h2>
+          <p className={styles.p}>
+            If you&apos;re tired of the copy-paste dance, ClipPilot is here to
+            help. It&apos;s easy to use and keeps everything you copy just a
+            click away. Give it a shot and make your Mac life a bit easier.
+          </p>
+          <p className={styles.p}>
+            That&apos;s what ClipPilot&apos;s for! It keeps all your text and
+            images in one easy-to-find place, so you don&apos;t have to keep
+            searching for the same information over and over.<br></br>
+            <br></br> With ClipPilot, you can bookmark, organize, and store all
+            your essential texts and images. Say goodbye to the frustration of
+            hunting for that piece of information you know you copied before.
+          </p>
+          <br></br>
+          <p className={styles.p}>
+            Ready to simplify your life?{" "}
+            <a
+              href="https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-primary font-bold"
+            >
+              Download ClipPilot now
+            </a>{" "}
+            and start organizing your clipboard like a pro!
           </p>
         </section>
       </>
