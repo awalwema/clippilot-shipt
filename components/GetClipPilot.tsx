@@ -10,7 +10,7 @@ export default function GetClipPilot() {
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
             <span className="text-green-700">Instantly</span> Access Your
             Essential Clipboard Content. Get ClipPilot Now for Only{" "}
-            <span className="text-green-700">$0.99</span>
+            <span className="text-green-700">$4.99</span>
           </h2>
           <p className="mt-3 text-lg text-gray-500">
             Have you ever copied an important piece of information, only to
